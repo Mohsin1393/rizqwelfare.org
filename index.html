@@ -45,6 +45,20 @@
     .contact {
       background: #004d40;
       color: white;
+      text-align: center;
+    }
+    .contact a {
+      color: white;
+      text-decoration: none;
+      margin: 0 10px;
+      font-size: 1.2rem;
+    }
+    .contact-icons {
+      margin-top: 1rem;
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      font-size: 2rem;
     }
     footer {
       background: #222;
@@ -98,6 +112,7 @@
       font-style: normal;
     }
   </style>
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
 </head>
 <body>
   <header>
@@ -153,9 +168,14 @@
 
   <section class="contact">
     <h2>Contact Us</h2>
-    <p>Email: contact@rizqwelfare.org</p>
-    <p>Phone: +91 98765 43210</p>
+    <p>Email: <a href="mailto:contact@rizqwelfare.org">contact@rizqwelfare.org</a></p>
+    <p>Phone: <a href="tel:+919876543210">+91 98765 43210</a></p>
     <p>Location: Chennai, India</p>
+    <div class="contact-icons">
+      <a href="mailto:contact@rizqwelfare.org" title="Email"><i class="fas fa-envelope"></i></a>
+      <a href="tel:+919876543210" title="Call"><i class="fas fa-phone"></i></a>
+      <a href="https://wa.me/919876543210" title="WhatsApp" target="_blank"><i class="fab fa-whatsapp"></i></a>
+    </div>
   </section>
 
   <footer>
