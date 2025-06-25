@@ -46,6 +46,17 @@
       background: #004d40;
       color: white;
       text-align: center;
+      animation: fadeInUp 1s ease-in-out;
+    }
+    @keyframes fadeInUp {
+      from {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
     }
     .contact a {
       color: white;
@@ -61,12 +72,20 @@
       font-size: 2rem;
     }
     .contact-icons a {
-      color: white;
       transition: transform 0.3s, color 0.3s;
+    }
+    .contact-icons a.email {
+      color: #D44638;
+    }
+    .contact-icons a.phone {
+      color: #34B7F1;
+    }
+    .contact-icons a.whatsapp {
+      color: #25D366;
     }
     .contact-icons a:hover {
       transform: scale(1.2);
-      color: #ffcc80;
+      opacity: 0.8;
     }
     footer {
       background: #222;
@@ -181,9 +200,9 @@
       <p>Phone: <a href="tel:+919876543210">+91 98765 43210</a></p>
       <p>Location: Chennai, India</p>
       <div class="contact-icons">
-        <a href="mailto:contact@rizqwelfare.org" title="Email"><i class="fas fa-envelope"></i></a>
-        <a href="tel:+919876543210" title="Call"><i class="fas fa-phone"></i></a>
-        <a href="https://wa.me/919876543210" title="WhatsApp" target="_blank"><i class="fab fa-whatsapp"></i></a>
+        <a href="mailto:contact@rizqwelfare.org" class="email" title="Email"><i class="fas fa-envelope"></i></a>
+        <a href="tel:+919876543210" class="phone" title="Call"><i class="fas fa-phone"></i></a>
+        <a href="https://wa.me/919876543210" class="whatsapp" title="WhatsApp" target="_blank"><i class="fab fa-whatsapp"></i></a>
       </div>
     </section>
     <p>&copy; 2025 Rizq Welfare Organization | <a href="#">Privacy Policy</a></p>
