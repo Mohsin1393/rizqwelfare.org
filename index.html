@@ -12,7 +12,7 @@
       color: #333;
     }
     header {
-      background: url('https://via.placeholder.com/1600x800') center/cover no-repeat;
+      background: url('https://images.unsplash.com/photo-1606788075761-c3d42fe8f5f6') center/cover no-repeat;
       color: white;
       height: 100vh;
       display: flex;
@@ -61,12 +61,52 @@
       border-radius: 5px;
       margin-top: 1rem;
     }
+    .social-buttons {
+      display: flex;
+      justify-content: center;
+      gap: 1rem;
+      margin-top: 2rem;
+    }
+    .social-buttons a {
+      display: inline-block;
+      padding: 10px 15px;
+      background: #25D366;
+      color: white;
+      text-decoration: none;
+      border-radius: 5px;
+      font-weight: bold;
+    }
+    .social-buttons a.instagram {
+      background: #E1306C;
+    }
+    .quote-section {
+      background: #fff3e0;
+      padding: 3rem 2rem;
+      text-align: center;
+      font-style: italic;
+    }
+    .quote-section blockquote {
+      margin: 2rem auto;
+      max-width: 800px;
+      font-size: 1.2rem;
+      color: #555;
+    }
+    .quote-section cite {
+      display: block;
+      margin-top: 0.5rem;
+      color: #888;
+      font-style: normal;
+    }
   </style>
 </head>
 <body>
   <header>
     <h1>Rizq Welfare Organization</h1>
     <p>Together, we can turn Rizq into a blessing for everyone. Join us in feeding hearts and homes.</p>
+    <div class="social-buttons">
+      <a href="https://wa.me/?text=Support%20Rizq%20Welfare%20Organization%20https%3A%2F%2Frizqwelfare.org" target="_blank">Share on WhatsApp</a>
+      <a href="https://www.instagram.com/rizqwelfare" class="instagram" target="_blank">Follow on Instagram</a>
+    </div>
   </header>
 
   <section>
@@ -92,6 +132,18 @@
     <p>Your support helps us feed more people. Every small donation brings a big change.</p>
     <a href="#" class="button" target="_blank">Donate Now</a>
     <p style="font-size: 0.9rem; color: gray;">(Donation link will be added soon)</p>
+  </section>
+
+  <section class="quote-section">
+    <h2>Quotes That Inspire Us</h2>
+    <blockquote>
+      "Those who in charity spend of their goods by night and by day, in secret and in public, have their reward with their Lord: on them shall be no fear, nor shall they grieve."
+      <cite>— Quran, 2:274</cite>
+    </blockquote>
+    <blockquote>
+      "Give charity even with a small amount because indeed all that is intended for the sake of Allah; although it may be small it becomes great after having an honest intention."
+      <cite>— Imam Reza (a.s)</cite>
+    </blockquote>
   </section>
 
   <section class="section-light">
