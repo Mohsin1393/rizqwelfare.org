@@ -4,6 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Rizq Welfare Organization</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-9yM6FL9g/UPQK3RW7BoBb6lK0H9CVGx3FKZLVuVqT7JjQn5NCK+iFSV9rXDcgxzupJYQ7VUuOJ7jDCR/Fkv+5w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <style>
     body {
       margin: 0;
@@ -64,44 +65,28 @@
       margin: 0 10px;
       font-size: 1.2rem;
     }
-    .contact-icons {
-      margin-top: 1rem;
-      display: flex;
-      justify-content: center;
-      gap: 2rem;
-      font-size: 2rem;
-    }
-    .contact-icons a {
-      transition: transform 0.3s, color 0.3s;
-    }
-    .contact-icons a.email {
-      color: #D44638;
-    }
-    .contact-icons a.phone {
-      color: #34B7F1;
-    }
-    .contact-icons a.whatsapp {
-      color: #25D366;
-    }
-    .contact-icons a:hover {
-      transform: scale(1.2);
-      opacity: 0.8;
-    }
     .social-connect {
       display: flex;
       justify-content: center;
       gap: 1.5rem;
-      font-size: 1.5rem;
+      font-size: 1.8rem;
       margin-top: 1rem;
     }
     .social-connect a {
       text-decoration: none;
+      transition: transform 0.3s ease;
+    }
+    .social-connect a:hover {
+      transform: scale(1.2);
     }
     .social-connect .instagram {
-      color: #C13584;
+      color: #E1306C;
     }
     .social-connect .whatsapp {
       color: #25D366;
+    }
+    .social-connect .email {
+      color: #FFA726;
     }
     footer {
       background: #222;
@@ -221,8 +206,9 @@
         <p>Phone: <a href="tel:+919876543210">+91 98765 43210</a></p>
         <p>Location: Chennai, India</p>
         <div class="social-connect">
-          <a href="https://www.instagram.com/rizqwelfare" class="instagram" title="Instagram">📷</a>
-          <a href="https://wa.me/919876543210" class="whatsapp" title="WhatsApp">💬</a>
+          <a href="mailto:contact@rizqwelfare.org" class="email" title="Email"><i class="fas fa-envelope"></i></a>
+          <a href="https://www.instagram.com/rizqwelfare" class="instagram" title="Instagram"><i class="fab fa-instagram"></i></a>
+          <a href="https://wa.me/919876543210" class="whatsapp" title="WhatsApp"><i class="fab fa-whatsapp"></i></a>
         </div>
       </div>
     </section>
