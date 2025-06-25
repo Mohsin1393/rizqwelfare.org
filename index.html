@@ -4,13 +4,43 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Rizq Welfare Organization</title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-9yM6FL9g/UPQK3RW7BoBb6lK0H9CVGx3FKZLVuVqT7JjQn5NCK+iFSV9rXDcgxzupJYQ7VUuOJ7jDCR/Fkv+5w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
   <style>
+    * {
+      box-sizing: border-box;
+      scroll-behavior: smooth;
+    }
     body {
       margin: 0;
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      line-height: 1.6;
       color: #333;
+    }
+    nav.navbar {
+      position: sticky;
+      top: 0;
+      background: #004d40;
+      padding: 1rem;
+      z-index: 1000;
+      text-align: center;
+    }
+    nav.navbar ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+    nav.navbar ul li {
+      margin: 0 15px;
+    }
+    nav.navbar ul li a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    nav.navbar ul li a:hover {
+      text-decoration: underline;
     }
     header {
       background: url('https://images.unsplash.com/photo-1606788075761-c3d42fe8f5f6') center/cover no-repeat;
@@ -39,25 +69,40 @@
     }
     h2 {
       color: #004d40;
+      text-align: center;
     }
     .section-light {
       background: #f5f5f5;
+    }
+    .cause-card {
+      border: 1px solid #ddd;
+      padding: 1rem;
+      border-radius: 5px;
+      background: white;
+      margin: 1rem;
+      flex: 1 1 250px;
+    }
+    .causes-grid {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    .gallery-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1rem;
+      margin-top: 2rem;
+    }
+    .gallery-grid img {
+      width: 100%;
+      height: auto;
+      border-radius: 5px;
     }
     .contact {
       background: #004d40;
       color: white;
       text-align: center;
-      animation: fadeInUp 1s ease-in-out;
-    }
-    @keyframes fadeInUp {
-      from {
-        opacity: 0;
-        transform: translateY(20px);
-      }
-      to {
-        opacity: 1;
-        transform: translateY(0);
-      }
+      padding: 3rem 1rem;
     }
     .contact a {
       color: white;
@@ -139,15 +184,20 @@
       color: #888;
       font-style: normal;
     }
-    .contact-wrapper {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-    }
   </style>
 </head>
 <body>
-  <header>
+  <nav class="navbar">
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About Us</a></li>
+      <li><a href="#causes">Causes</a></li>
+      <li><a href="#gallery">Gallery</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <header id="home">
     <h1>Rizq Welfare Organization</h1>
     <p>Together, we can turn Rizq into a blessing for everyone. Join us in feeding hearts and homes.</p>
     <div class="social-buttons">
@@ -156,12 +206,10 @@
     </div>
   </header>
 
-  <section>
+  <section id="about" class="section-light">
     <h2>About Us</h2>
     <p>Rizq Welfare Organization is a non-profit initiative dedicated to ending hunger and ensuring no one in our community sleeps hungry. We believe in the power of sharing, compassion, and collective action.</p>
-  </section>
 
-  <section class="section-light">
     <h2>Our Mission</h2>
     <p>To bring hope to empty plates by delivering nutritious meals to the underprivileged, with compassion, dignity, and respect.</p>
 
@@ -169,16 +217,31 @@
     <p>A world where no one sleeps hungry and everyone shares their Rizq with those in need.</p>
   </section>
 
-  <section>
-    <h2>Why Donate</h2>
-    <p>Your contribution makes a real difference. Every rupee goes directly towards food, supplies, and outreach to communities that need it most. With your help, we can expand our reach and impact more lives.</p>
+  <section id="causes">
+    <h2>Our Causes</h2>
+    <div class="causes-grid">
+      <div class="cause-card">
+        <h3>Food Distribution</h3>
+        <p>Distributing cooked meals to the homeless and underprivileged.</p>
+      </div>
+      <div class="cause-card">
+        <h3>Ration Kits</h3>
+        <p>Monthly dry ration kits to struggling families.</p>
+      </div>
+      <div class="cause-card">
+        <h3>Medical Aid</h3>
+        <p>Support for essential medicines and emergency care.</p>
+      </div>
+    </div>
   </section>
 
-  <section class="section-light">
-    <h2>Support Our Mission</h2>
-    <p>Your support helps us feed more people. Every small donation brings a big change.</p>
-    <a href="#" class="button" target="_blank">Donate Now</a>
-    <p style="font-size: 0.9rem; color: gray;">(Donation link will be added soon)</p>
+  <section id="gallery" class="section-light">
+    <h2>Gallery</h2>
+    <div class="gallery-grid">
+      <img src="https://via.placeholder.com/300x200" alt="Gallery Image 1">
+      <img src="https://via.placeholder.com/300x200" alt="Gallery Image 2">
+      <img src="https://via.placeholder.com/300x200" alt="Gallery Image 3">
+    </div>
   </section>
 
   <section class="quote-section">
@@ -193,25 +256,19 @@
     </blockquote>
   </section>
 
-  <section class="section-light">
-    <h2>Get Involved</h2>
-    <p>You can join our mission by donating, volunteering, or simply spreading the word. Contact us to learn more about how you can help.</p>
+  <section id="contact" class="contact">
+    <h2>Contact Us</h2>
+    <p>Email: <a href="mailto:contact@rizqwelfare.org">contact@rizqwelfare.org</a></p>
+    <p>Phone: <a href="tel:+919876543210">+91 98765 43210</a></p>
+    <p>Location: Chennai, India</p>
+    <div class="social-connect">
+      <a href="mailto:contact@rizqwelfare.org" class="email" title="Email"><i class="fas fa-envelope"></i></a>
+      <a href="https://www.instagram.com/rizqwelfare" class="instagram" title="Instagram"><i class="fab fa-instagram"></i></a>
+      <a href="https://wa.me/919876543210" class="whatsapp" title="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+    </div>
   </section>
 
   <footer>
-    <section class="contact">
-      <div class="contact-wrapper">
-        <h2>Contact Us</h2>
-        <p>Email: <a href="mailto:contact@rizqwelfare.org">contact@rizqwelfare.org</a></p>
-        <p>Phone: <a href="tel:+919876543210">+91 98765 43210</a></p>
-        <p>Location: Chennai, India</p>
-        <div class="social-connect">
-          <a href="mailto:contact@rizqwelfare.org" class="email" title="Email"><i class="fas fa-envelope"></i></a>
-          <a href="https://www.instagram.com/rizqwelfare" class="instagram" title="Instagram"><i class="fab fa-instagram"></i></a>
-          <a href="https://wa.me/919876543210" class="whatsapp" title="WhatsApp"><i class="fab fa-whatsapp"></i></a>
-        </div>
-      </div>
-    </section>
     <p>&copy; 2025 Rizq Welfare Organization | <a href="#">Privacy Policy</a></p>
   </footer>
 </body>
