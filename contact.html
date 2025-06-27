@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Contact | Rizq Welfare</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
   <style>
@@ -10,6 +10,7 @@
     body {
       margin: 0;
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: #fdfcf8;
       color: #333;
     }
 
@@ -22,11 +23,11 @@
     }
     .navbar ul {
       list-style: none;
-      margin: 0;
-      padding: 0;
       display: flex;
       justify-content: center;
       flex-wrap: wrap;
+      margin: 0;
+      padding: 0;
     }
     .navbar li {
       margin: 0 15px;
@@ -51,7 +52,6 @@
       right: 1.5rem;
       cursor: pointer;
     }
-
     @media (max-width: 768px) {
       .navbar ul {
         display: none;
@@ -67,20 +67,84 @@
       }
     }
 
-    section {
-      padding: 4rem 2rem;
-      max-width: 800px;
+    .contact-wrapper {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      padding: 2rem;
+      max-width: 1200px;
       margin: auto;
-      text-align: center;
+      gap: 2rem;
     }
 
-    h2 {
+    .contact-info, .contact-form {
+      flex: 1 1 400px;
+      background: #fff;
+      padding: 2rem;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.05);
+    }
+
+    .contact-info h3 {
+      font-size: 1.5rem;
+      margin-bottom: 1rem;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
       color: #004d40;
     }
 
-    .contact-info {
+    .contact-info p {
       font-size: 1.1rem;
-      margin: 1rem 0;
+      line-height: 1.6;
+    }
+
+    .contact-info strong {
+      display: block;
+      margin-top: 1.2rem;
+      font-size: 1.1rem;
+    }
+
+    .contact-form h2 {
+      color: #004d40;
+      margin-bottom: 1rem;
+    }
+
+    form input, form textarea {
+      width: 100%;
+      padding: 0.8rem;
+      margin: 0.5rem 0;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      font-family: inherit;
+      font-size: 1rem;
+    }
+
+    form button {
+      background: #007bff;
+      color: white;
+      padding: 0.8rem 1.5rem;
+      border: none;
+      border-radius: 5px;
+      font-weight: bold;
+      cursor: pointer;
+      margin-top: 1rem;
+    }
+
+    form button:hover {
+      background: #0056b3;
+    }
+
+    .contact-green {
+      background: #004d40;
+      color: white;
+      padding: 3rem 2rem;
+      text-align: center;
+      margin-top: 3rem;
+    }
+
+    .contact-green a {
+      color: #ffcc80;
     }
 
     .social-connect {
@@ -88,18 +152,21 @@
       justify-content: center;
       gap: 1.5rem;
       font-size: 1.8rem;
-      margin-top: 2rem;
+      margin-top: 1.5rem;
     }
+
     .social-connect a {
       text-decoration: none;
       transition: transform 0.3s ease;
     }
+
     .social-connect a:hover {
       transform: scale(1.2);
     }
-    .social-connect .instagram { color: #E1306C; }
-    .social-connect .whatsapp { color: #25D366; }
-    .social-connect .email { color: #FFA726; }
+
+    .instagram { color: #E1306C; }
+    .whatsapp { color: #25D366; }
+    .email { color: #FFA726; }
 
     footer {
       background: #222;
@@ -110,6 +177,7 @@
   </style>
 </head>
 <body>
+
   <!-- Navbar -->
   <nav class="navbar">
     <button class="hamburger" onclick="document.querySelector('.navbar ul').classList.toggle('show')">
@@ -125,17 +193,41 @@
     </ul>
   </nav>
 
-  <!-- Contact Section -->
-  <section>
-    <h2>Contact Us</h2>
-    <p class="contact-info">Email: <a href="mailto:contact@rizqwelfare.org">contact@rizqwelfare.org</a></p>
-    <p class="contact-info">Phone: <a href="tel:+919876543210">+91 98765 43210</a></p>
-    <p class="contact-info">Location: Chennai, India</p>
+  <!-- Contact Page Layout -->
+  <div class="contact-wrapper">
+    <!-- Left: Info -->
+    <div class="contact-info">
+      <h3><img src="https://flagcdn.com/w40/in.png" alt="India Flag" width="24"/> India</h3>
+      <p><strong>Address:</strong> Royapettah, Chennai-600014, Tamilnadu, India</p>
+      <p><strong>Call Us:</strong> +91 9150720039</p>
+      <p><strong>Email Us:</strong> rizqfoundation4u.org@gmail.com</p>
+    </div>
 
+    <!-- Right: Contact Form -->
+    <div class="contact-form">
+      <h2>Quick Contact Form</h2>
+      <form action="https://formspree.io/f/xovwywny?redirect=https://mohsin1393.github.io/rizqwelfare.org/thankyou.html" method="POST">
+        <input type="text" name="name" placeholder="Your Name*" required>
+        <input type="email" name="email" placeholder="Your Email*" required>
+        <input type="text" name="phone" placeholder="Your Phone*" required>
+        <input type="text" name="address" placeholder="Your Address*" required>
+        <textarea name="message" rows="5" placeholder="Case Description*" required></textarea>
+        <button type="submit">Submit Now</button>
+      </form>
+      <p style="font-size: 0.9rem; color: #666; margin-top: 0.5rem;">(Form submission powered by Formspree)</p>
+    </div>
+  </div>
+
+  <!-- Green Contact Section -->
+  <section class="contact-green">
+    <h2>Contact Us</h2>
+    <p>Email: <a href="mailto:rizqfoundation4u.org@gmail.com">Rizqfoundation4u.org@gmail.com</a></p>
+    <p>Phone & WhatsApp: <a href="tel:+919150720039">+91 9150720039</a></p>
+    <p>Location: Royapettah, Chennai-600014, Tamilnadu, India</p>
     <div class="social-connect">
-      <a href="mailto:contact@rizqwelfare.org" class="email" title="Email"><i class="fas fa-envelope"></i></a>
-      <a href="https://www.instagram.com/rizqwelfare" class="instagram" title="Instagram"><i class="fab fa-instagram"></i></a>
-      <a href="https://wa.me/919876543210" class="whatsapp" title="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+      <a href="mailto:rizqfoundation4u.org@gmail.com" class="email" title="Email"><i class="fas fa-envelope"></i></a>
+      <a href="https://instagram.com/rizq_foundation4u" target="_blank" class="instagram" title="Instagram"><i class="fab fa-instagram"></i></a>
+      <a href="https://wa.me/919150720039" target="_blank" class="whatsapp" title="WhatsApp"><i class="fab fa-whatsapp"></i></a>
     </div>
   </section>
 
@@ -143,5 +235,6 @@
   <footer>
     <p>&copy; 2025 Rizq Welfare Organization | <a href="#">Privacy Policy</a></p>
   </footer>
+
 </body>
 </html>
