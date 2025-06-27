@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact | Rizq Welfare</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <style>
+    * { box-sizing: border-box; scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      color: #333;
+    }
+
+    nav.navbar {
+      position: sticky;
+      top: 0;
+      background: #004d40;
+      padding: 1rem;
+      z-index: 1000;
+    }
+    .navbar ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+    .navbar li {
+      margin: 0 15px;
+    }
+    .navbar a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    .navbar a:hover {
+      text-decoration: underline;
+    }
+
+    .hamburger {
+      display: none;
+      background: none;
+      border: none;
+      color: white;
+      font-size: 1.5rem;
+      position: absolute;
+      top: 1rem;
+      right: 1.5rem;
+      cursor: pointer;
+    }
+
+    @media (max-width: 768px) {
+      .navbar ul {
+        display: none;
+        flex-direction: column;
+        background-color: #004d40;
+        width: 100%;
+      }
+      .navbar ul.show {
+        display: flex;
+      }
+      .hamburger {
+        display: block;
+      }
+    }
+
+    section {
+      padding: 4rem 2rem;
+      max-width: 800px;
+      margin: auto;
+      text-align: center;
+    }
+
+    h2 {
+      color: #004d40;
+    }
+
+    .contact-info {
+      font-size: 1.1rem;
+      margin: 1rem 0;
+    }
+
+    .social-connect {
+      display: flex;
+      justify-content: center;
+      gap: 1.5rem;
+      font-size: 1.8rem;
+      margin-top: 2rem;
+    }
+    .social-connect a {
+      text-decoration: none;
+      transition: transform 0.3s ease;
+    }
+    .social-connect a:hover {
+      transform: scale(1.2);
+    }
+    .social-connect .instagram { color: #E1306C; }
+    .social-connect .whatsapp { color: #25D366; }
+    .social-connect .email { color: #FFA726; }
+
+    footer {
+      background: #222;
+      color: white;
+      text-align: center;
+      padding: 1rem;
+    }
+  </style>
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar">
+    <button class="hamburger" onclick="document.querySelector('.navbar ul').classList.toggle('show')">
+      <i class="fas fa-bars"></i>
+    </button>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About Us</a></li>
+      <li><a href="causes.html">Causes</a></li>
+      <li><a href="gallery.html">Gallery</a></li>
+      <li><a href="donate.html">Donate</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- Contact Section -->
+  <section>
+    <h2>Contact Us</h2>
+    <p class="contact-info">Email: <a href="mailto:contact@rizqwelfare.org">contact@rizqwelfare.org</a></p>
+    <p class="contact-info">Phone: <a href="tel:+919876543210">+91 98765 43210</a></p>
+    <p class="contact-info">Location: Chennai, India</p>
+
+    <div class="social-connect">
+      <a href="mailto:contact@rizqwelfare.org" class="email" title="Email"><i class="fas fa-envelope"></i></a>
+      <a href="https://www.instagram.com/rizqwelfare" class="instagram" title="Instagram"><i class="fab fa-instagram"></i></a>
+      <a href="https://wa.me/919876543210" class="whatsapp" title="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Rizq Welfare Organization | <a href="#">Privacy Policy</a></p>
+  </footer>
+</body>
+</html>
