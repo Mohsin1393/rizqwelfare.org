@@ -21,6 +21,7 @@
       padding: 1rem;
       z-index: 1000;
     }
+
     .navbar ul {
       list-style: none;
       display: flex;
@@ -29,14 +30,17 @@
       margin: 0;
       padding: 0;
     }
+
     .navbar li {
       margin: 0 15px;
     }
+
     .navbar a {
       color: white;
       text-decoration: none;
       font-weight: bold;
     }
+
     .navbar a:hover {
       text-decoration: underline;
     }
@@ -52,6 +56,7 @@
       right: 1.5rem;
       cursor: pointer;
     }
+
     @media (max-width: 768px) {
       .navbar ul {
         display: none;
@@ -209,8 +214,7 @@
       <form action="https://formspree.io/f/xovwywny?redirect=https://mohsin1393.github.io/rizqwelfare.org/thankyou.html" method="POST">
         <input type="text" name="name" placeholder="Your Name*" required>
         <input type="email" name="email" placeholder="Your Email*" required>
-        <input type="text" name="phone" placeholder="Your Phone*" required>
-        <input type="text" name="address" placeholder="Your Address*" required>
+        <input type="text" name="phone" placeholder="Your Phone (Optional)">
         <textarea name="message" rows="5" placeholder="Case Description*" required></textarea>
         <button type="submit">Submit Now</button>
       </form>
