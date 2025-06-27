@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About Us | Rizq Welfare</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <style>
+    * { box-sizing: border-box; scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      color: #333;
+    }
+
+    nav.navbar {
+      position: sticky;
+      top: 0;
+      background: #004d40;
+      padding: 1rem;
+      z-index: 1000;
+    }
+    .navbar ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+    .navbar li {
+      margin: 0 15px;
+    }
+    .navbar a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    .navbar a:hover {
+      text-decoration: underline;
+    }
+
+    .hamburger {
+      display: none;
+      background: none;
+      border: none;
+      color: white;
+      font-size: 1.5rem;
+      position: absolute;
+      top: 1rem;
+      right: 1.5rem;
+      cursor: pointer;
+    }
+
+    @media (max-width: 768px) {
+      .navbar ul {
+        display: none;
+        flex-direction: column;
+        background-color: #004d40;
+        width: 100%;
+      }
+      .navbar ul.show {
+        display: flex;
+      }
+      .hamburger {
+        display: block;
+      }
+    }
+
+    section {
+      padding: 4rem 2rem;
+      max-width: 1000px;
+      margin: auto;
+    }
+    h2 {
+      color: #004d40;
+      text-align: center;
+    }
+    footer {
+      background: #222;
+      color: white;
+      text-align: center;
+      padding: 1rem;
+    }
+  </style>
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar">
+    <button class="hamburger" onclick="document.querySelector('.navbar ul').classList.toggle('show')">
+      <i class="fas fa-bars"></i>
+    </button>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About Us</a></li>
+      <li><a href="causes.html">Causes</a></li>
+      <li><a href="gallery.html">Gallery</a></li>
+      <li><a href="donate.html">Donate</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- About Us Section -->
+  <section>
+    <h2>About Us</h2>
+    <p>Rizq Welfare Organization is a non-profit initiative dedicated to ending hunger and ensuring no one in our community sleeps hungry. We believe in the power of sharing, compassion, and collective action.</p>
+  </section>
+
+  <section>
+    <h2>Our Mission</h2>
+    <p>To bring hope to empty plates by delivering nutritious meals to the underprivileged, with compassion, dignity, and respect.</p>
+  </section>
+
+  <section>
+    <h2>Our Vision</h2>
+    <p>A world where no one sleeps hungry and everyone shares their Rizq with those in need.</p>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Rizq Welfare Organization | <a href="#">Privacy Policy</a></p>
+  </footer>
+</body>
+</html>
