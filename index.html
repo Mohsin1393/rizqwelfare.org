@@ -1,286 +1,113 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="utf-8">
   <title>Rizq Welfare Organization</title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
-  <style>
-    * {
-      box-sizing: border-box;
-      scroll-behavior: smooth;
-    }
-    body {
-      margin: 0;
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      color: #333;
-    }
-    nav.navbar {
-      position: sticky;
-      top: 0;
-      background: #004d40;
-      padding: 1rem;
-      z-index: 1000;
-      text-align: center;
-    }
-    nav.navbar ul {
-      list-style: none;
-      margin: 0;
-      padding: 0;
-      display: flex;
-      justify-content: center;
-      flex-wrap: wrap;
-    }
-    nav.navbar ul li {
-      margin: 0 15px;
-    }
-    nav.navbar ul li a {
-      color: white;
-      text-decoration: none;
-      font-weight: bold;
-    }
-    nav.navbar ul li a:hover {
-      text-decoration: underline;
-    }
-    header {
-      background: url('https://images.unsplash.com/photo-1606788075761-c3d42fe8f5f6') center/cover no-repeat;
-      color: white;
-      height: 100vh;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      text-align: center;
-      padding: 2rem;
-    }
-    header h1 {
-      font-size: 3rem;
-      margin: 0;
-    }
-    header p {
-      font-size: 1.5rem;
-      margin-top: 1rem;
-      max-width: 600px;
-    }
-    section {
-      padding: 4rem 2rem;
-      max-width: 1000px;
-      margin: auto;
-    }
-    h2 {
-      color: #004d40;
-      text-align: center;
-    }
-    .section-light {
-      background: #f5f5f5;
-    }
-    .cause-card {
-      border: 1px solid #ddd;
-      padding: 1rem;
-      border-radius: 5px;
-      background: white;
-      margin: 1rem;
-      flex: 1 1 250px;
-    }
-    .causes-grid {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-    }
-    .gallery-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 1rem;
-      margin-top: 2rem;
-    }
-    .gallery-grid img {
-      width: 100%;
-      height: auto;
-      border-radius: 5px;
-    }
-    .contact {
-      background: #004d40;
-      color: white;
-      text-align: center;
-      padding: 3rem 1rem;
-    }
-    .contact a {
-      color: white;
-      text-decoration: none;
-      margin: 0 10px;
-      font-size: 1.2rem;
-    }
-    .social-connect {
-      display: flex;
-      justify-content: center;
-      gap: 1.5rem;
-      font-size: 1.8rem;
-      margin-top: 1rem;
-    }
-    .social-connect a {
-      text-decoration: none;
-      transition: transform 0.3s ease;
-    }
-    .social-connect a:hover {
-      transform: scale(1.2);
-    }
-    .social-connect .instagram {
-      color: #E1306C;
-    }
-    .social-connect .whatsapp {
-      color: #25D366;
-    }
-    .social-connect .email {
-      color: #FFA726;
-    }
-    footer {
-      background: #222;
-      color: white;
-      text-align: center;
-      padding: 1rem;
-    }
-    a.button {
-      display: inline-block;
-      padding: 10px 20px;
-      background: #00897b;
-      color: white;
-      text-decoration: none;
-      border-radius: 5px;
-      margin-top: 1rem;
-    }
-    .social-buttons {
-      display: flex;
-      justify-content: center;
-      gap: 1rem;
-      margin-top: 2rem;
-    }
-    .social-buttons a {
-      display: inline-block;
-      padding: 10px 15px;
-      background: #25D366;
-      color: white;
-      text-decoration: none;
-      border-radius: 5px;
-      font-weight: bold;
-    }
-    .social-buttons a.instagram {
-      background: #E1306C;
-    }
-    .quote-section {
-      background: #fff3e0;
-      padding: 3rem 2rem;
-      text-align: center;
-      font-style: italic;
-    }
-    .quote-section blockquote {
-      margin: 2rem auto;
-      max-width: 800px;
-      font-size: 1.2rem;
-      color: #555;
-    }
-    .quote-section cite {
-      display: block;
-      margin-top: 0.5rem;
-      color: #888;
-      font-style: normal;
-    }
-  </style>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <meta content="Rizq Welfare, Non-Profit, Charity, Hunger Relief" name="keywords">
+  <meta content="Rizq Welfare Organization - Feeding hearts and homes" name="description">
+
+  <link href="img/favicon.ico" rel="icon">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto:wght@500&display=swap" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+  <link href="lib/animate/animate.min.css" rel="stylesheet">
+  <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+  <link href="lib/tempusdominus/css/tempusdominus-bootstrap-4.min.css" rel="stylesheet" />
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
 </head>
+
 <body>
-  <nav class="navbar">
-    <ul>
-      <li><a href="#home">Home</a></li>
-      <li><a href="#about">About Us</a></li>
-      <li><a href="#causes">Causes</a></li>
-      <li><a href="#gallery">Gallery</a></li>
-      <li><a href="#donate">Donate</a></li>
-      <li><a href="#contact">Contact</a></li>
-    </ul>
+  <!-- Spinner Start -->
+  <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+      <div class="spinner-border text-primary" role="status"></div>
+  </div>
+  <!-- Spinner End -->
+
+  <!-- Navbar Start -->
+  <nav class="navbar navbar-expand-lg bg-white navbar-light shadow sticky-top p-0">
+      <a href="index.html" class="navbar-brand d-flex align-items-center px-4 px-lg-5">
+          <h2 class="m-0 text-primary">Rizq Welfare</h2>
+      </a>
+      <button type="button" class="navbar-toggler me-4" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+          <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarCollapse">
+          <div class="navbar-nav ms-auto p-4 p-lg-0">
+              <a href="index.html" class="nav-item nav-link active">Home</a>
+              <a href="about.html" class="nav-item nav-link">About Us</a>
+              <a href="causes.html" class="nav-item nav-link">Causes</a>
+              <a href="gallery.html" class="nav-item nav-link">Gallery</a>
+              <a href="donate.html" class="nav-item nav-link">Donate</a>
+              <a href="contact.html" class="nav-item nav-link">Contact</a>
+          </div>
+      </div>
   </nav>
+  <!-- Navbar End -->
 
-  <header id="home">
-    <h1>Rizq Welfare Organization</h1>
-    <p>Together, we can turn Rizq into a blessing for everyone. Join us in feeding hearts and homes.</p>
-    <div class="social-buttons">
-      <a href="https://wa.me/?text=Support%20Rizq%20Welfare%20Organization%20https%3A%2F%2Frizqwelfare.org" target="_blank">Share on WhatsApp</a>
-      <a href="https://www.instagram.com/rizqwelfare" class="instagram" target="_blank">Follow on Instagram</a>
-    </div>
-  </header>
-
-  <section id="about" class="section-light">
-    <h2>About Us</h2>
-    <p>Rizq Welfare Organization is a non-profit initiative dedicated to ending hunger and ensuring no one in our community sleeps hungry. We believe in the power of sharing, compassion, and collective action.</p>
-
-    <h2>Our Mission</h2>
-    <p>To bring hope to empty plates by delivering nutritious meals to the underprivileged, with compassion, dignity, and respect.</p>
-
-    <h2>Our Vision</h2>
-    <p>A world where no one sleeps hungry and everyone shares their Rizq with those in need.</p>
-  </section>
-
-  <section id="causes">
-    <h2>Our Causes</h2>
-    <div class="causes-grid">
-      <div class="cause-card">
-        <h3>Food Distribution</h3>
-        <p>Distributing cooked meals to the homeless and underprivileged.</p>
+  <!-- Hero Start -->
+  <div class="container-fluid p-0 mb-5">
+      <div class="owl-carousel header-carousel position-relative">
+          <div class="owl-carousel-item position-relative">
+              <img class="img-fluid" src="img/carousel-1.jpg" alt="">
+              <div class="position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center justify-content-center flex-column bg-dark bg-opacity-50">
+                  <h1 class="display-3 text-white animated slideInDown">Rizq Welfare Organization</h1>
+                  <p class="fs-4 text-white text-center px-3 animated slideInDown">Together, we can turn Rizq into a blessing for everyone. Join us in feeding hearts and homes.</p>
+              </div>
+          </div>
       </div>
-      <div class="cause-card">
-        <h3>Ration Kits</h3>
-        <p>Monthly dry ration kits to struggling families.</p>
+  </div>
+  <!-- Hero End -->
+
+  <!-- Mission Section -->
+  <div class="container py-5">
+      <div class="row g-5 align-items-center">
+          <div class="col-lg-6 wow fadeInLeft" data-wow-delay="0.1s">
+              <h2 class="mb-4">Our Mission</h2>
+              <p>To bring hope to empty plates by delivering nutritious meals to the underprivileged, with compassion, dignity, and respect.</p>
+              <h2 class="mb-4 mt-5">Our Vision</h2>
+              <p>A world where no one sleeps hungry and everyone shares their Rizq with those in need.</p>
+          </div>
+          <div class="col-lg-6 wow fadeInRight" data-wow-delay="0.3s">
+              <img class="img-fluid rounded" src="img/about.jpg" alt="">
+          </div>
       </div>
-      <div class="cause-card">
-        <h3>Medical Aid</h3>
-        <p>Support for essential medicines and emergency care.</p>
+  </div>
+
+  <!-- Footer Start -->
+  <div class="container-fluid bg-dark text-light footer pt-5 wow fadeIn" data-wow-delay="0.1s">
+      <div class="container">
+          <div class="row g-5">
+              <div class="col-lg-12 text-center">
+                  <h5 class="text-white mb-3">Contact</h5>
+                  <p>Email: contact@rizqwelfare.org</p>
+                  <p>Phone: +91 98765 43210</p>
+                  <p>Location: Chennai, India</p>
+              </div>
+          </div>
       </div>
-    </div>
-  </section>
+      <div class="container">
+          <div class="copyright">
+              <div class="row">
+                  <div class="col-md-12 text-center text-white">
+                      &copy; 2025 Rizq Welfare Organization | <a href="#">Privacy Policy</a>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+  <!-- Footer End -->
 
-  <section id="gallery" class="section-light">
-    <h2>Gallery</h2>
-    <div class="gallery-grid">
-      <img src="https://via.placeholder.com/300x200" alt="Gallery Image 1">
-      <img src="https://via.placeholder.com/300x200" alt="Gallery Image 2">
-      <img src="https://via.placeholder.com/300x200" alt="Gallery Image 3">
-    </div>
-  </section>
-
-  <section class="quote-section">
-    <h2>Quotes That Inspire Us</h2>
-    <blockquote>
-      "Those who in charity spend of their goods by night and by day, in secret and in public, have their reward with their Lord: on them shall be no fear, nor shall they grieve."
-      <cite>— Quran, 2:274</cite>
-    </blockquote>
-    <blockquote>
-      "Give charity even with a small amount because indeed all that is intended for the sake of Allah; although it may be small it becomes great after having an honest intention."
-      <cite>— Imam Reza (a.s)</cite>
-    </blockquote>
-  </section>
-
-  <section id="donate" class="section-light">
-    <h2>Support Our Mission</h2>
-    <p>Your donation helps us feed more families, provide ration kits, and support the vulnerable. Every rupee counts!</p>
-
-    <div style="text-align: center; margin-top: 2rem;">
-      <a href="#" class="button" target="_blank">Donate Now</a>
-      <p style="font-size: 0.9rem; color: gray;">(Donation link will be added soon)</p>
-    </div>
-  </section>
-
-  <section id="contact" class="contact">
-    <h2>Contact Us</h2>
-    <p>Email: <a href="mailto:contact@rizqwelfare.org">contact@rizqwelfare.org</a></p>
-    <p>Phone: <a href="tel:+919876543210">+91 98765 43210</a></p>
-    <p>Location: Chennai, India</p>
-    <div class="social-connect">
-      <a href="mailto:contact@rizqwelfare.org" class="email" title="Email"><i class="fas fa-envelope"></i></a>
-      <a href="https://www.instagram.com/rizqwelfare" class="instagram" title="Instagram"><i class="fab fa-instagram"></i></a>
-      <a href="https://wa.me/919876543210" class="whatsapp" title="WhatsApp"><i class="fab fa-whatsapp"></i></a>
-    </div>
-  </section>
-
-  <footer>
-    <p>&copy; 2025 Rizq Welfare Organization | <a href="#">Privacy Policy</a></p>
-  </footer>
+  <!-- JS Libraries -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="lib/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="lib/wow/wow.min.js"></script>
+  <script src="lib/easing/easing.min.js"></script>
+  <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+  <script>
+    new WOW().init();
+  </script>
 </body>
 </html>
