@@ -21,7 +21,6 @@
       padding: 1rem;
       z-index: 1000;
     }
-
     .navbar ul {
       list-style: none;
       display: flex;
@@ -30,21 +29,17 @@
       margin: 0;
       padding: 0;
     }
-
     .navbar li {
       margin: 0 15px;
     }
-
     .navbar a {
       color: white;
       text-decoration: none;
       font-weight: bold;
     }
-
     .navbar a:hover {
       text-decoration: underline;
     }
-
     .hamburger {
       display: none;
       background: none;
@@ -56,7 +51,6 @@
       right: 1.5rem;
       cursor: pointer;
     }
-
     @media (max-width: 768px) {
       .navbar ul {
         display: none;
@@ -93,21 +87,12 @@
     .contact-info h3 {
       font-size: 1.5rem;
       margin-bottom: 1rem;
-      display: flex;
-      align-items: center;
-      gap: 0.5rem;
       color: #004d40;
     }
 
     .contact-info p {
       font-size: 1.1rem;
       line-height: 1.6;
-    }
-
-    .contact-info strong {
-      display: block;
-      margin-top: 1.2rem;
-      font-size: 1.1rem;
     }
 
     .contact-form h2 {
@@ -183,62 +168,62 @@
 </head>
 <body>
 
-  <!-- Navbar -->
-  <nav class="navbar">
-    <button class="hamburger" onclick="document.querySelector('.navbar ul').classList.toggle('show')">
-      <i class="fas fa-bars"></i>
-    </button>
-    <ul>
-      <li><a href="index.html">Home</a></li>
-      <li><a href="about.html">About Us</a></li>
-      <li><a href="causes.html">Causes</a></li>
-      <li><a href="gallery.html">Gallery</a></li>
-      <li><a href="donate.html">Donate</a></li>
-      <li><a href="contact.html">Contact</a></li>
-    </ul>
-  </nav>
+<!-- Navbar -->
+<nav class="navbar">
+  <button class="hamburger" onclick="document.querySelector('.navbar ul').classList.toggle('show')">
+    <i class="fas fa-bars"></i>
+  </button>
+  <ul>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="about.html">About Us</a></li>
+    <li><a href="causes.html">Causes</a></li>
+    <li><a href="gallery.html">Gallery</a></li>
+    <li><a href="donate.html">Donate</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+</nav>
 
-  <!-- Contact Page Layout -->
-  <div class="contact-wrapper">
-    <!-- Left: Info -->
-    <div class="contact-info">
-      <h3><img src="https://flagcdn.com/w40/in.png" alt="India Flag" width="24"/> India</h3>
-      <p><strong>Address:</strong> Royapettah, Chennai-600014, Tamilnadu, India</p>
-      <p><strong>Call Us:</strong> +91 9150720039</p>
-      <p><strong>Email Us:</strong> rizqfoundation4u.org@gmail.com</p>
-    </div>
-
-    <!-- Right: Contact Form -->
-    <div class="contact-form">
-      <h2>Quick Contact Form</h2>
-      <form action="https://formspree.io/f/xovwywny?redirect=https://mohsin1393.github.io/rizqwelfare.org/thankyou.html" method="POST">
-        <input type="text" name="name" placeholder="Your Name*" required>
-        <input type="email" name="email" placeholder="Your Email*" required>
-        <input type="text" name="phone" placeholder="Your Phone (Optional)">
-        <textarea name="message" rows="5" placeholder="Case Description*" required></textarea>
-        <button type="submit">Submit Now</button>
-      </form>
-      <p style="font-size: 0.9rem; color: #666; margin-top: 0.5rem;">(Form submission powered by Formspree)</p>
-    </div>
+<!-- Contact Content -->
+<div class="contact-wrapper">
+  <!-- Info -->
+  <div class="contact-info">
+    <h3>Contact Details</h3>
+    <p><strong>Address:</strong> Royapettah, Chennai-600014, Tamilnadu, India</p>
+    <p><strong>Phone:</strong> +91 9150720039</p>
+    <p><strong>Email:</strong> rizqwelfare.org@gmail.com</p>
   </div>
 
-  <!-- Contact Green Footer Section -->
-  <section class="contact-green">
-    <h2>Contact Us</h2>
-    <p>Email: <a href="mailto:rizqfoundation4u.org@gmail.com">rizqfoundation4u.org@gmail.com</a></p>
-    <p>Phone & WhatsApp: <a href="tel:+919150720039">+91 9150720039</a></p>
-    <p>Location: Royapettah, Chennai-600014, Tamilnadu, India</p>
-    <div class="social-connect">
-      <a href="mailto:rizqfoundation4u.org@gmail.com" class="email" title="Email"><i class="fas fa-envelope"></i></a>
-      <a href="https://instagram.com/rizq_foundation4u" target="_blank" class="instagram" title="Instagram"><i class="fab fa-instagram"></i></a>
-      <a href="https://wa.me/919150720039" target="_blank" class="whatsapp" title="WhatsApp"><i class="fab fa-whatsapp"></i></a>
-    </div>
-  </section>
+  <!-- Form -->
+  <div class="contact-form">
+    <h2>Quick Contact Form</h2>
+    <form action="https://formspree.io/f/mvgrdwll" method="POST">
+      <input type="text" name="name" placeholder="Your Name*" required>
+      <input type="email" name="email" placeholder="Your Email*" required>
+      <input type="text" name="phone" placeholder="Your Phone (Optional)">
+      <textarea name="message" rows="5" placeholder="Case Description*" required></textarea>
+      <button type="submit">Submit Now</button>
+    </form>
+    <p style="font-size: 0.9rem; color: #666; margin-top: 0.5rem;">(Form powered by Formspree)</p>
+  </div>
+</div>
 
-  <!-- Footer -->
-  <footer>
-    <p>&copy; 2025 Rizq Welfare Organization | <a href="#">Privacy Policy</a></p>
-  </footer>
+<!-- Contact Footer Section -->
+<section class="contact-green">
+  <h2>Contact Us</h2>
+  <p>Email: <a href="mailto:rizqwelfare.org@gmail.com">rizqwelfare.org@gmail.com</a></p>
+  <p>Phone & WhatsApp: <a href="tel:+919150720039">+91 9150720039</a></p>
+  <p>Location: Royapettah, Chennai-600014, Tamilnadu, India</p>
+  <div class="social-connect">
+    <a href="mailto:rizqwelfare.org@gmail.com" class="email" title="Email"><i class="fas fa-envelope"></i></a>
+    <a href="https://instagram.com/rizqwelfare4u" target="_blank" class="instagram" title="Instagram"><i class="fab fa-instagram"></i></a>
+    <a href="https://wa.me/919150720039" target="_blank" class="whatsapp" title="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer>
+  <p>&copy; 2025 Rizq Welfare Organization | <a href="#">Privacy Policy</a></p>
+</footer>
 
 </body>
 </html>
