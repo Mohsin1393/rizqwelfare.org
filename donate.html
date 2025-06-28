@@ -12,7 +12,6 @@
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
       color: #333;
     }
-
     nav.navbar {
       position: sticky;
       top: 0;
@@ -20,7 +19,6 @@
       padding: 1rem;
       z-index: 1000;
     }
-
     .navbar ul {
       list-style: none;
       margin: 0;
@@ -29,21 +27,17 @@
       justify-content: center;
       flex-wrap: wrap;
     }
-
     .navbar li {
       margin: 0 15px;
     }
-
     .navbar a {
       color: white;
       text-decoration: none;
       font-weight: bold;
     }
-
     .navbar a:hover {
       text-decoration: underline;
     }
-
     .hamburger {
       display: none;
       background: none;
@@ -55,7 +49,6 @@
       right: 1.5rem;
       cursor: pointer;
     }
-
     @media (max-width: 768px) {
       .navbar ul {
         display: none;
@@ -70,38 +63,32 @@
         display: block;
       }
     }
-
     section {
       padding: 4rem 2rem;
       max-width: 800px;
       margin: auto;
       text-align: center;
     }
-
     h2 {
       color: #004d40;
     }
-
     .quote-section {
       background: #fff3e0;
       padding: 3rem 2rem;
       font-style: italic;
     }
-
     .quote-section blockquote {
       margin: 2rem auto;
       max-width: 700px;
       font-size: 1.2rem;
       color: #555;
     }
-
     .quote-section cite {
       display: block;
       margin-top: 0.5rem;
       color: #888;
       font-style: normal;
     }
-
     .button {
       display: inline-block;
       padding: 10px 20px;
@@ -112,24 +99,20 @@
       margin-top: 1.5rem;
       font-weight: bold;
     }
-
     .note {
       font-size: 0.9rem;
       color: gray;
       margin-top: 1rem;
     }
-
     .contact-green {
       background: #004d40;
       color: white;
       padding: 3rem 2rem;
       text-align: center;
     }
-
     .contact-green a {
       color: #ffcc80;
     }
-
     .social-connect {
       display: flex;
       justify-content: center;
@@ -137,20 +120,16 @@
       font-size: 1.8rem;
       margin-top: 1.5rem;
     }
-
     .social-connect a {
       text-decoration: none;
       transition: transform 0.3s ease;
     }
-
     .social-connect a:hover {
       transform: scale(1.2);
     }
-
     .instagram { color: #E1306C; }
     .whatsapp { color: #25D366; }
     .email { color: #FFA726; }
-
     footer {
       background: #222;
       color: white;
@@ -161,59 +140,59 @@
 </head>
 <body>
 
-  <!-- Navbar -->
-  <nav class="navbar">
-    <button class="hamburger" onclick="document.querySelector('.navbar ul').classList.toggle('show')">
-      <i class="fas fa-bars"></i>
-    </button>
-    <ul>
-      <li><a href="index.html">Home</a></li>
-      <li><a href="about.html">About Us</a></li>
-      <li><a href="causes.html">Causes</a></li>
-      <li><a href="gallery.html">Gallery</a></li>
-      <li><a href="donate.html">Donate</a></li>
-      <li><a href="contact.html">Contact</a></li>
-    </ul>
-  </nav>
+<!-- Navbar -->
+<nav class="navbar">
+  <button class="hamburger" onclick="document.querySelector('.navbar ul').classList.toggle('show')">
+    <i class="fas fa-bars"></i>
+  </button>
+  <ul>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="about.html">About Us</a></li>
+    <li><a href="causes.html">Causes</a></li>
+    <li><a href="gallery.html">Gallery</a></li>
+    <li><a href="donate.html">Donate</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+</nav>
 
-  <!-- Quotes Section -->
-  <section class="quote-section">
-    <h2>Quotes That Inspire Us</h2>
-    <blockquote>
-      "Those who in charity spend of their goods by night and by day, in secret and in public, have their reward with their Lord: on them shall be no fear, nor shall they grieve."
-      <cite>— Quran, 2:274</cite>
-    </blockquote>
-    <blockquote>
-      "Give charity even with a small amount because indeed all that is intended for the sake of Allah; although it may be small it becomes great after having an honest intention."
-      <cite>— Imam Reza (a.s)</cite>
-    </blockquote>
-  </section>
+<!-- Quotes Section -->
+<section class="quote-section">
+  <h2>Quotes That Inspire Us</h2>
+  <blockquote>
+    "Those who in charity spend of their goods by night and by day, in secret and in public, have their reward with their Lord: on them shall be no fear, nor shall they grieve."
+    <cite>— Quran, 2:274</cite>
+  </blockquote>
+  <blockquote>
+    "Give charity even with a small amount because indeed all that is intended for the sake of Allah; although it may be small it becomes great after having an honest intention."
+    <cite>— Imam Reza (a.s)</cite>
+  </blockquote>
+</section>
 
-  <!-- Donate Section -->
-  <section>
-    <h2>Support Our Mission</h2>
-    <p>Your donation helps us feed more families, provide ration kits, and support the vulnerable. Every rupee counts!</p>
-    <a href="#" class="button" target="_blank">Donate Now</a>
-    <div class="note">(Donation link will be added soon)</div>
-  </section>
+<!-- Donate Section -->
+<section>
+  <h2>Support Our Mission</h2>
+  <p>Your donation helps us feed more families, provide ration kits, and support the vulnerable. Every rupee counts!</p>
+  <a href="#" class="button" target="_blank">Donate Now</a>
+  <div class="note">(Donation link will be added soon)</div>
+</section>
 
-  <!-- Contact Section (Green) -->
-  <section class="contact-green">
-    <h2>Contact Us</h2>
-    <p>Email: <a href="mailto:rizqfoundation4u.org@gmail.com">rizqfoundation4u.org@gmail.com</a></p>
-    <p>Phone & WhatsApp: <a href="tel:+919150720039">+91 9150720039</a></p>
-    <p>Location: Royapettah, Chennai-600014, Tamilnadu, India</p>
-    <div class="social-connect">
-      <a href="mailto:rizqfoundation4u.org@gmail.com" class="email" title="Email"><i class="fas fa-envelope"></i></a>
-      <a href="https://instagram.com/rizq_foundation4u" target="_blank" class="instagram" title="Instagram"><i class="fab fa-instagram"></i></a>
-      <a href="https://wa.me/919150720039" target="_blank" class="whatsapp" title="WhatsApp"><i class="fab fa-whatsapp"></i></a>
-    </div>
-  </section>
+<!-- Contact Section -->
+<section class="contact-green">
+  <h2>Contact Us</h2>
+  <p>Email: <a href="mailto:rizqwelfare.org@gmail.com">rizqwelfare.org@gmail.com</a></p>
+  <p>Phone & WhatsApp: <a href="tel:+919150720039">+91 9150720039</a></p>
+  <p>Location: Royapettah, Chennai-600014, Tamilnadu, India</p>
+  <div class="social-connect">
+    <a href="mailto:rizqwelfare.org@gmail.com" class="email" title="Email"><i class="fas fa-envelope"></i></a>
+    <a href="https://instagram.com/rizqwelfare4u" target="_blank" class="instagram" title="Instagram"><i class="fab fa-instagram"></i></a>
+    <a href="https://wa.me/919150720039" target="_blank" class="whatsapp" title="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+  </div>
+</section>
 
-  <!-- Footer -->
-  <footer>
-    <p>&copy; 2025 Rizq Welfare Organization | <a href="#">Privacy Policy</a></p>
-  </footer>
+<!-- Footer -->
+<footer>
+  <p>&copy; 2025 Rizq Welfare Organization | <a href="#">Privacy Policy</a></p>
+</footer>
 
 </body>
 </html>
