@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Rizq Welfare Organization</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <style>
+    * { box-sizing: border-box; scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      color: #333;
+    }
+    nav.navbar {
+      position: sticky;
+      top: 0;
+      background: #004d40;
+      padding: 1rem;
+      z-index: 1000;
+    }
+    .navbar ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+    .navbar li {
+      margin: 0 15px;
+    }
+    .navbar a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    .navbar a:hover {
+      text-decoration: underline;
+    }
+    .hamburger {
+      display: none;
+      background: none;
+      border: none;
+      color: white;
+      font-size: 1.5rem;
+      position: absolute;
+      top: 1rem;
+      right: 1.5rem;
+      cursor: pointer;
+    }
+    @media (max-width: 768px) {
+      .navbar ul {
+        display: none;
+        flex-direction: column;
+        background-color: #004d40;
+        width: 100%;
+      }
+      .navbar ul.show {
+        display: flex;
+      }
+      .hamburger {
+        display: block;
+      }
+    }
+    header {
+      background: url('https://images.unsplash.com/photo-1606788075761-c3d42fe8f5f6') center center / cover no-repeat;
+      color: white;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding: 2rem;
+    }
+    header h1 {
+      font-size: 3rem;
+      margin: 0;
+    }
+    header p {
+      font-size: 1.5rem;
+      margin-top: 1rem;
+      max-width: 600px;
+    }
+    section {
+      padding: 4rem 2rem;
+      max-width: 1000px;
+      margin: auto;
+    }
+    h2 {
+      color: #004d40;
+      text-align: center;
+    }
+    .causes-grid {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 2rem;
+      margin-top: 2rem;
+    }
+    .cause-card {
+      flex: 1 1 250px;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      padding: 1.5rem;
+      background: #f9f9f9;
+      text-align: center;
+    }
+    .gallery-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1rem;
+      margin-top: 2rem;
+    }
+    .gallery-grid img {
+      width: 100%;
+      height: auto;
+      border-radius: 5px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    }
+    .quote-section {
+      background: #fff3e0;
+      padding: 3rem 2rem;
+      text-align: center;
+      font-style: italic;
+    }
+    .quote-section blockquote {
+      margin: 2rem auto;
+      max-width: 800px;
+      font-size: 1.2rem;
+      color: #555;
+    }
+    .quote-section cite {
+      display: block;
+      margin-top: 0.5rem;
+      color: #888;
+      font-style: normal;
+    }
+    .button {
+      display: inline-block;
+      padding: 10px 20px;
+      background: #00897b;
+      color: white;
+      text-decoration: none;
+      border-radius: 5px;
+      margin-top: 1.5rem;
+      font-weight: bold;
+    }
+    .note {
+      font-size: 0.9rem;
+      color: gray;
+      margin-top: 1rem;
+      text-align: center;
+    }
+    .contact-green {
+      background: #004d40;
+      color: white;
+      padding: 3rem 2rem;
+      text-align: center;
+    }
+    .contact-green a {
+      color: #ffcc80;
+    }
+    .social-connect {
+      display: flex;
+      justify-content: center;
+      gap: 1.5rem;
+      font-size: 1.8rem;
+      margin-top: 1.5rem;
+    }
+    .social-connect a {
+      text-decoration: none;
+      transition: transform 0.3s ease;
+    }
+    .social-connect a:hover {
+      transform: scale(1.2);
+    }
+    .instagram { color: #E1306C; }
+    .whatsapp { color: #25D366; }
+    .email { color: #FFA726; }
+    footer {
+      background: #222;
+      color: white;
+      text-align: center;
+      padding: 1rem;
+    }
+  </style>
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar">
+  <button class="hamburger" onclick="document.querySelector('.navbar ul').classList.toggle('show')">
+    <i class="fas fa-bars"></i>
+  </button>
+  <ul>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="about.html">About Us</a></li>
+    <li><a href="causes.html">Causes</a></li>
+    <li><a href="gallery.html">Gallery</a></li>
+    <li><a href="donate.html">Donate</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+</nav>
+
+<!-- Hero Section -->
+<header>
+  <h1>Rizq Welfare Organization</h1>
+  <p>Together, we can turn Rizq into a blessing for everyone. Join us in feeding hearts and homes.</p>
+</header>
+
+<!-- About Section -->
+<section>
+  <h2>About Us</h2>
+  <p>Rizq Welfare Organization is a non-profit initiative dedicated to ending hunger and ensuring no one in our community sleeps hungry. We believe in the power of sharing, compassion, and collective action.</p>
+  <h2 style="margin-top:3rem;">Our Mission</h2>
+  <p>To bring hope to empty plates by delivering nutritious meals to the underprivileged, with compassion, dignity, and respect.</p>
+  <h2 style="margin-top:3rem;">Our Vision</h2>
+  <p>A world where no one sleeps hungry and everyone shares their Rizq with those in need.</p>
+</section>
+
+<!-- Causes Section -->
+<section>
+  <h2>Our Causes</h2>
+  <div class="causes-grid">
+    <div class="cause-card">
+      <h3>Food Distribution</h3>
+      <p>Distributing cooked meals to the homeless and underprivileged.</p>
+    </div>
+    <div class="cause-card">
+      <h3>Ration Kits</h3>
+      <p>Monthly dry ration kits to struggling families.</p>
+    </div>
+    <div class="cause-card">
+      <h3>Medical Aid</h3>
+      <p>Support for essential medicines and emergency care.</p>
+    </div>
+  </div>
+</section>
+
+<!-- Gallery Section -->
+<section>
+  <h2>Gallery</h2>
+  <div class="gallery-grid">
+    <img src="https://via.placeholder.com/300x200?text=Image+1" alt="Gallery Image 1">
+    <img src="https://via.placeholder.com/300x200?text=Image+2" alt="Gallery Image 2">
+    <img src="https://via.placeholder.com/300x200?text=Image+3" alt="Gallery Image 3">
+  </div>
+</section>
+
+<!-- Quote Section -->
+<section class="quote-section">
+  <h2>Quotes That Inspire Us</h2>
+  <blockquote>
+    "Those who in charity spend of their goods by night and by day, in secret and in public, have their reward with their Lord: on them shall be no fear, nor shall they grieve."
+    <cite>— Quran, 2:274</cite>
+  </blockquote>
+  <blockquote>
+    "Give charity even with a small amount because indeed all that is intended for the sake of Allah; although it may be small it becomes great after having an honest intention."
+    <cite>— Imam Reza (a.s)</cite>
+  </blockquote>
+</section>
+
+<!-- Donate Section -->
+<section>
+  <h2>Support Our Mission</h2>
+  <p>Your donation helps us feed more families, provide ration kits, and support the vulnerable. Every rupee counts!</p>
+  <div style="text-align:center;">
+    <a href="#" class="button">Donate Now</a>
+    <p class="note">(Donation link will be added soon)</p>
+  </div>
+</section>
+
+<!-- Contact Section -->
+<section class="contact-green">
+  <h2>Contact Us</h2>
+  <p>Email: <a href="mailto:rizqwelfare.org@gmail.com">rizqwelfare.org@gmail.com</a></p>
+  <p>Phone & WhatsApp: <a href="tel:+919150720039">+91 9150720039</a></p>
+  <p>Location: Royapettah, Chennai-600014, Tamilnadu, India</p>
+  <div class="social-connect">
+    <a href="mailto:rizqwelfare.org@gmail.com" class="email" title="Email"><i class="fas fa-envelope"></i></a>
+    <a href="https://instagram.com/rizqwelfare4u" target="_blank" class="instagram" title="Instagram"><i class="fab fa-instagram"></i></a>
+    <a href="https://wa.me/919150720039" target="_blank" class="whatsapp" title="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer>
+  <p>&copy; 2025 Rizq Welfare Organization | <a href="#">Privacy Policy</a></p>
+</footer>
+
+</body>
+</html>
